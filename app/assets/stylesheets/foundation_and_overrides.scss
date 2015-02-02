@@ -116,7 +116,7 @@
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #B18806;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -124,9 +124,9 @@
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-bg: #384047;
+$body-font-color: #fff;
+$body-font-family: "gotham-rounded", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -198,7 +198,7 @@
 // $header-font-family: $body-font-family;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: #fff;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -255,8 +255,8 @@
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: #ddd;
+$anchor-font-color-hover: #fff;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -423,7 +423,7 @@
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
 // $button-sml: rem-calc(14);
-// $button-med: rem-calc(16);
+$button-med: rem-calc(10);
 // $button-lrg: rem-calc(18);
 
 // We use this to control the display property.
@@ -625,7 +625,7 @@
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
+$input-bg-color: #E6E6E6;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
 // $input-border-color: scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
@@ -782,15 +782,21 @@
 // $include-html-label-classes: $include-html-classes;
 
 // We use these to style the labels
-// $label-padding: rem-calc(4 8 4);
+$label-padding: rem-calc(5 15);
 // $label-radius: $global-radius;
 
 // We use these to style the label text
-// $label-font-sizing: rem-calc(11);
+$label-font-sizing: rem-calc(14);
 // $label-font-weight: $font-weight-normal;
 // $label-font-color: $oil;
 // $label-font-color-alt: $white;
 // $label-font-family: $body-font-family;
+//
+//.movie-label {
+//  @include label($text-size: 13px, $bg: #3D3D32);
+//  color: gold;
+//
+//}
 
 // 17. Magellan
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1236,6 +1242,9 @@
 // $switch-border-width: 1px;
 // $switch-bg: $white;
 
+$switch-active-color: $primary-color;
+
+
 // We use these to control the switch heights for our default classes
 // $switch-height-tny: rem-calc(22);
 // $switch-height-sml: rem-calc(28);
@@ -1364,16 +1373,16 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: rgba(255, 255, 255, 0);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
-// $topbar-margin-bottom: 0;
+$topbar-height: rem-calc(45);
+$topbar-margin-bottom: 30px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(25);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
@@ -1393,14 +1402,14 @@
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
+$topbar-link-bg-hover: $primary-color;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-hover: $oil;
 // $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: ($topbar-height / 3);
+$topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: $h5-font-size;
 // $topbar-link-dropdown-padding: 20px;
 
