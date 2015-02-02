@@ -62,3 +62,5 @@ Thumbs.db
 
 vendor/bundle
 .idea/workspace.xml
+
+.idea/moviestore.iml
