@@ -42,3 +42,8 @@ gem 'spring',        group: :development
 gem 'foundation-rails', '~> 5.5.0'
 gem 'sass-rails', '~>5.0.0'
 gem 'devise'
+
+# Using Redis to build a shopping cart from scratch
+gem 'redis', '~> 3.0.1'
+gem 'hiredis', '~> 0.4.5'
+
