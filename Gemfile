@@ -4,7 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+  gem 'pry-rails'
+  gem 'dotenv-rails'
+end
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,3 +54,5 @@ gem 'devise'
 gem 'redis', '~> 3.0.1'
 gem 'hiredis', '~> 0.4.5'
 
+# for fast webserver & pushing to heroku
+gem 'thin', '~> 1.6.3'
