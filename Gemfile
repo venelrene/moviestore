@@ -14,6 +14,8 @@ end
 
 group :production do
   gem 'pg'
+  #  enable all platform features for heroku
+  gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 4.0.3'
@@ -61,5 +63,3 @@ gem 'hiredis', '~> 0.4.5'
 
 # for fast webserver & pushing to heroku
 gem 'thin', '~> 1.6.3'
-#  enable all platform features for heroku
-gem 'rails_12factor'
