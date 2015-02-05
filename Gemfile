@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.5'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use sqlite3 as the database for Active Record
@@ -59,3 +61,5 @@ gem 'hiredis', '~> 0.4.5'
 
 # for fast webserver & pushing to heroku
 gem 'thin', '~> 1.6.3'
+#  enable all platform features for heroku
+gem 'rails_12factor'
