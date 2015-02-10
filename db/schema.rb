@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150202213549) do
+ActiveRecord::Schema.define(version: 20150210210827) do
 
   create_table "movies", force: true do |t|
     t.string   "title"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20150202213549) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "purchases", force: true do |t|
+    t.integer  "movie_id"
+    t.integer  "buyer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "purchases", ["movie_id", "buyer_id"], name: "index_purchases_on_movie_id_and_buyer_id", unique: true
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
