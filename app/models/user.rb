@@ -1,15 +1,21 @@
 class User < ActiveRecord::Base
+
+  has_many :purchases, foreign_key: :buyer_id
+  has_many :movies, through: :purchases
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  # Braintree methods
+
+
+
+  # Cart methods
   def cart_count
     $redis.scard "cart#{id}"
   end
-
-  has_many :purchases, foreign_key: :buyer_id
-  has_many :movies, through: :purchases
 
   def cart_total_price
     total_price = 0

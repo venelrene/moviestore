@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150210222505) do
+ActiveRecord::Schema.define(version: 20150211165828) do
 
   create_table "movies", force: true do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150210222505) do
     t.string   "poster_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "video_url"
   end
 
   create_table "purchases", force: true do |t|
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150210222505) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "braintree_customer_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
