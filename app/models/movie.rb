@@ -15,7 +15,7 @@ class Movie < ActiveRecord::Base
 
 
   def embed_video_url
-    self.video_url = "//www.youtube.com/embed/#{video_url.split('v=')[1].split('&list')[0]}"
+    # self.video_url = "//www.youtube.com/embed/#{video_url.split('v=')[1].split('&list')[0]}"
   end
 
   def cart_action(current_user_id)
