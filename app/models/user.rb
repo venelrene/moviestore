@@ -19,9 +19,10 @@ class User < ActiveRecord::Base
 
   def get_cart_movies
     cart_ids = $redis.smembers "cart#{id}"
-    movies.find(cart_ids)
+    Movie.find(cart_ids)
   end
 
+  # Purchasing methods
   def purchase_cart_movies!
     get_cart_movies.each { |movie| purchase(movie)}
     $redis.del "cart#{id}"
