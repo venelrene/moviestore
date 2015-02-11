@@ -69,3 +69,6 @@ gem 'braintree', '~> 2.33.1'
 
 # figaro does the samething you would do with your .env file (keeps config out of git)
 gem 'figaro', '~> 0.7.0'
+
+# Gon allows us to set variables in our controllers and then access them from JavaScript
+gem 'gon', '~> 5.1.2'
