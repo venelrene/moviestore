@@ -22,7 +22,7 @@ module Moviestore
     # Turn off asset digest until we figure out why it doesn't
     # work when we push our assets to Heroku. The font references
     # in our CSS are missing the digest portion.
-    config.assets.digest = false
+    # config.assets.digest = false
   end
 end
 
