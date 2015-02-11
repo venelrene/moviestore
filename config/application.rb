@@ -18,6 +18,11 @@ module Moviestore
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Turn off asset digest until we figure out why it doesn't
+    # work when we push our assets to Heroku. The font references
+    # in our CSS are missing the digest portion.
+    config.assets.digest = false
   end
 end
 

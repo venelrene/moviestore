@@ -67,3 +67,6 @@ vendor/bundle
 
 # Ignore application configuration
 /config/application.yml
+
+# We generate the assets at deploy time
+pubic/assets/**
