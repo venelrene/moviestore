@@ -64,3 +64,6 @@ vendor/bundle
 .idea/workspace.xml
 
 .idea/moviestore.iml
+
+# Ignore application configuration
+/config/application.yml

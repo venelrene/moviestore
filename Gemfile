@@ -63,3 +63,9 @@ gem 'hiredis', '~> 0.4.5'
 
 # for fast webserver & pushing to heroku
 gem 'thin', '~> 1.6.3'
+
+# braintree for payment
+gem 'braintree', '~> 2.33.1'
+
+# figaro does the samething you would do with your .env file (keeps config out of git)
+gem 'figaro', '~> 0.7.0'
