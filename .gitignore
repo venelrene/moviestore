@@ -74,3 +74,5 @@ pubic/assets/**
 .idea/modules.xml
 
 *.xml
+
+.idea/encodings.xml
