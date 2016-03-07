@@ -70,3 +70,7 @@ vendor/bundle
 
 # We generate the assets at deploy time
 pubic/assets/**
+
+.idea/modules.xml
+
+*.xml
